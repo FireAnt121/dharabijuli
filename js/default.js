@@ -136,6 +136,31 @@ jQuery(document).ready(function () {
 })(jQuery);
 
 jQuery(document).ready(function () {
+    let h = jQuery(window).height();
+    let w = jQuery(window).width();
+    let start = jQuery('.fr_section2').offset();
+    jQuery('.fr-flow').css({
+        'margin-top' : (h-10) + 'px',
+        'height' : '0px',
+        'margin-left' : ((w/2)) + 'px'
+    });
+    jQuery(document).scroll(function(){
+        let s = jQuery(document).scrollTop();
+
+        
+        if(s > (h/2) && s < 2700){
+            jQuery('.fr-flow').css({
+                'height' : ((s*1.3-h) ) +'px'
+            });
+        }
+        else if( s <= (h/2))
+        {
+            jQuery('.fr-flow').css({
+                'height' : '0px'
+            });
+        }
+        console.log(s);
+    });
     jQuery(".go-top").click(function () {
         jQuery("html,body").animate({scrollTop: 0}, 1e3);
     });

@@ -5,7 +5,7 @@
 get_header();
 ?>
 <section class="section-main">
-
+	<div class="fr-flow"></div>
 	<div class="fr_section1 row">
 		<div class="fr_section1_left col-md-6">
 			<h1>दश ठाउँ किन जानी ?<br>जब धाराबिजुली छ नि !</h1>
@@ -134,6 +134,88 @@ with professionalism and exceptional customer care.</p>
 			<div class="col-md-2">
 			</div>
 		</div>
+	</div>
+
+	<div class="fr_section5 row">
+		<h1 class="text-center">Our Packages Deals</h1>
+
+		<div class="col-sm-12 col-md-3">
+			<div class="col-sm-12">
+				<h4>Rs 1,000</h4>
+				<p>Per Month</p>
+				<h2>Service Upto Rs 2,000</h2>
+				<h3>1 Routine Checkup</h3>
+			</div>
+		</div>
+		<div class="col-sm-12 col-md-3">
+		<img class="" src="<?php echo get_template_directory_uri();?>/images/mod1.png" alt="dharabijuli" />
+		<div class="col-sm-12 f_red f_w fr_active_card">
+				<h4>Rs 3,000</h4>
+				<p>Per Month</p>
+				<h2>Service Upto Rs 2,000</h2>
+				<h3>1 Routine Checkup</h3>
+			</div>
+		</div>
+
+		<div class="col-sm-12 col-md-3">
+		<div class="col-sm-12 f_green f_w">
+				<h4>Rs 5,000</h4>
+				<p>Per Month</p>
+				<h2>Service Upto Rs 2,000</h2>
+				<h3>1 Routine Checkup</h3>
+			</div>
+		</div>
+		<div class="col-sm-12 col-md-3">
+		<div class="col-sm-12 f_purple f_w">
+				<h4>Rs 7,000</h4>
+				<p>Per Month</p>
+				<h2>Service Upto Rs 2,000</h2>
+				<h3>1 Routine Checkup</h3>
+			</div>
+		</div>
+	</div>
+
+	<div class="fr_section6 row">
+	<h1 class="text-center">Our Happy Clients</h1>
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/pipe1.jpg" alt="pipe" />
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+	<span>- John Doe</span>
+	</div>
+
+    <div class="item">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/pipe1.jpg" alt="pipe" />
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+	<span>- John Doe</span>
+    </div>
+
+    <div class="item">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/pipe1.jpg" alt="pipe" />
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+	<span>- John Doe</span>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
 	</div>
 	<!-- fireant changes -->
     <!-- <div class="page-banner col-md-12">

@@ -1,4 +1,5 @@
 jQuery(document).ready(function () {
+
     jQuery("#our-blog-gallery").owlCarousel({
         autoPlay: 3000, //Set AutoPlay to 3 seconds
         items: 2,
