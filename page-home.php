@@ -67,7 +67,7 @@ get_header();
 
 	</div>
 
-	<div class="fr_section3 row">
+	<div class="fr_section3 row fr-blue-bg">
 		<div class="col-md-8 wow bounceInLeft" data-wow-delay="0.5s">
 			<h1>Why Choose Us ?</h1>
 

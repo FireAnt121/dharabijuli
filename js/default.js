@@ -161,6 +161,17 @@ jQuery(document).ready(function () {
 /**lava lamp effect */
 (function($) {
 $(document).ready(function () {
+
+  $('#myModal').on('show.bs.modal', function (event) {
+    $('#header').css({
+      'position':'relative'
+    });
+  });
+    $('#myModal').on('hide.bs.modal', function (event) {
+      $('#header').css({
+        'position':'fixed'
+      });
+  });
     window.lavaAnimation = (function() {
         "use strict";
         var t,

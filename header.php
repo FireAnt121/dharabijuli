@@ -16,7 +16,7 @@ $niche_options = get_option('niche_theme_options');
     </head>
     <body <?php body_class(); ?>>
         <header class="<?php if(true){ echo 'transparent'; } else {echo 'no-transparent';} ?>">
-            <nav id="header" class="navbar main-nav fixed-header" style="position: absolute; top: auto;">
+            <nav id="header" class="navbar main-nav fixed-header" style="top: auto;">
                 <div class="container less-padding">
                     <div class="header-logo">
                         <?php if(has_custom_logo()){
