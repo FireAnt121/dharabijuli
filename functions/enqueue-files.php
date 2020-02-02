@@ -10,6 +10,7 @@ function niche_enqueue() {
     wp_enqueue_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.css', array());
     wp_enqueue_style('font-awesome', get_template_directory_uri() . '/css/font-awesome.css', array());
     wp_enqueue_style('niche-theme-default', get_template_directory_uri() . '/css/theme-default.css', array());
+    wp_enqueue_style('media-niche', get_template_directory_uri() . '/css/media.css', array());
    
 
     wp_enqueue_script('bootstrap', get_template_directory_uri() . '/js/bootstrap.js', array('jquery'));

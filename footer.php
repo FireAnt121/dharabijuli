@@ -5,9 +5,11 @@ $hide_footer_widget_bar = get_theme_mod('hideFooterWidgetBar',1);
     $footer_widget_style = $footer_widget_style+1;
     $footer_col_value = floor(12/($footer_widget_style)); ?>
     <div  class="main-footer">
+    <div class="fr-footer-img"></div>
 		<div class="container less-padding">
 			<div class="col-md-12 footer-row2 ">
 				<div class="row footer-main">
+
                 <?php $flag_widget=true; $k = 1; ?>
                 <?php for( $i=0; $i<$footer_widget_style; $i++) { ?>
                     <?php if (is_active_sidebar('footer-'.$k)) { ?>
@@ -45,7 +47,7 @@ $hide_footer_widget_bar = get_theme_mod('hideFooterWidgetBar',1);
 				<div class="row">
 					<div class="col-md-6 col-sm-6 copyright-text">
 					    <p>
-						<?php printf(/* translators: 1 is theme url*/ esc_html__( 'Powered by %1$s', 'niche' ),'<a href="'.esc_url('https://fasterthemes.com/wordpress-themes/niche').'" target="_blank">Niche WordPress Theme</a>' ); 
+						<?php printf(/* translators: 1 is theme url*/ esc_html__( 'Powered by %1$s', 'niche' ),'<a href="'.esc_url('https://prithakcreation.com').'" target="_blank">Priithak Creation </a>' ); 
 						
 						 $niche_copyright_check = get_theme_mod( 'copyright_text' );
 							if( $niche_copyright_check != '' ) {
@@ -70,6 +72,12 @@ $hide_footer_widget_bar = get_theme_mod('hideFooterWidgetBar',1);
 		</div>
 	</div>
 </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script>
+new WOW({
+    mobile: false,
+}).init();
+</script>
 <?php wp_footer(); ?>
 </body>
 </html>

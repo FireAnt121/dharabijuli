@@ -1,0 +1,47 @@
+
+@media screen and (max-width: 1855px) {
+
+}
+
+@media screen and (max-width: 1600px) {
+
+}
+
+@media screen and (max-width: 1440px) {
+
+}
+
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: 991px) {
+  nav .container .header-logo{
+    width: 60px;
+  }
+  nav .container .header-menu #mainmenu #menu-button{
+    color:#dd3f1e;
+  }
+  .section-main .fr_section1 .fr_section1_left{
+    height:60vh;
+  }
+  .section-main .fr_section1 .fr_section1_right{
+    height:40vh;
+    border-radius: 50px 50px 0px 0px;
+  }
+  .fr_section5 .col-md-6 {
+      margin-bottom:50px;
+  } 
+}
+
+@media screen and (max-width: 767px) {
+
+}
+
+@media screen and (max-width: 575px) {
+
+}
+
+@media screen and (max-width: 400px){
+
+}

@@ -9,7 +9,9 @@ $niche_options = get_option('niche_theme_options');
         <meta charset="<?php bloginfo( 'charset' ); ?>"> 
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="profile" href="http://gmpg.org/xfn/11">
-        <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">             
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+        <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">    
+         
         <?php wp_head(); ?>
     </head>
     <body <?php body_class(); ?>>

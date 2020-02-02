@@ -1,5 +1,5 @@
 body{
-    background-color:#f8f8f8;	
+    background-color:#fff;	
     color: #545445;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
@@ -1138,7 +1138,35 @@ section {
 /*******************
     footer css strat
 ******************/
-.main-footer{border-top: 4px solid #e17400;display:block;background-color: #2B2B2B;padding-top:30px;margin-top:0px;float:left;width:100%;}
+.main-footer{display:block;background-color: #5e4ace;margin-top:0px;float:left;width:100%;margin-top:100px;overflow: hidden;}
+.fr-footer-img{
+    background: url(../images/cir_white.png);
+    width: 45vw;
+    height: 45vw;
+    position: absolute;
+    background-size: cover;
+    background-position: right bottom;
+    z-index: 1;
+    margin: -20vw 0px 0px -10vw;
+}
+.main-footer img{
+    position: relative;
+    z-index: 2;
+
+}
+.main-footer div.col-sm-4.col-xs-12.col-md-4
+{
+    padding-top:30px;
+    text-align: center;
+}
+.main-footer div.col-sm-4.col-xs-12.col-md-4 .widget-title{
+    font-size:3rem;
+    font-weight:bold;
+    border-bottom:0px;
+}
+.footer-main aside.widget_media_image{
+    display: flex;
+}
 .footer-logo{text-align:center;}
 .footer-row2{margin-bottom:45px;padding: 0;}
 .widget-title{border-bottom:1px solid #545454;color:#ffffff;font-size:15px;padding-bottom:10px;text-transform:uppercase;}
@@ -1176,7 +1204,7 @@ section {
 .recent-post ul li a:hover{color:#e17400;}
 .recent-post ul li span{display:inline-block;width:100%;color:#c1c1c1;font-weight: normal;}
 .recent-post ul li:first-child{padding-top: 0;}
-.footer-row3{background-color:#f8f8f8;padding:13px 0;}
+.footer-row3{background-color:#523dcc;padding:13px 0;}
 .footer-bottom{
     padding: 0;
 }
@@ -1189,13 +1217,14 @@ section {
     display: inline;
 }
 .social-links li a i{
-    background-color: #6d6d6d;
+
     border-radius: 50%;
     text-align: center;
     color: #ffffff;
     height: 30px;
     width: 30px;
     padding-top: 8px;
+    margin-left:0.875rem;
     transition: all ease-in-out 0.3s;
     -webkit-transition: all ease-in-out 0.3s;
 }
@@ -1209,7 +1238,7 @@ section {
 .copyright-text p,
 .copyright-text a{
     margin-bottom: 0;
-    color: #212121;
+    color: #c1c1c1;
 }
 .copyright-text a:hover{
     color: #e17400;
