@@ -58,13 +58,62 @@ jQuery(window).load(function(){
     jQuery('.preloader').delay(400).fadeOut(500);
 });
 (function ($) {
+  $(document).ready(function(){
+    $('.everest-form button').hide();
+    $('.contact-us .everest-form button').show();
+    $('.modal-body .fr_section5').hide();
+    $('#fr-proceed').click(function(){
+      $("form[id='registration']").validate({
+        // Specify validation rules
+        rules: {
+          // The key name on the left side is the name attribute
+          // of an input field. Validation rules are defined
+          // on the right side
+          firstname: "required",
+          lastname: "required",
+          email: {
+            required: true,
+            // Specify that email should be validated
+            // by the built-in "email" rule
+            email: true
+          },
+          password: {
+            required: true,
+            minlength: 5
+          }
+        },
+        // Specify validation error messages
+        messages: {
+          firstname: "Please enter your firstname",
+          lastname: "Please enter your lastname",
+          password: {
+            required: "Please provide a password",
+            minlength: "Your password must be at least 5 characters long"
+          },
+          email: "Please enter a valid email address"
+        },
+        // Make sure the form is submitted to the destination defined
+        // in the "action" attribute of the form when valid
+        submitHandler: function(form) {
+          form.submit();
+        }
+      });
+      $('.everest-form button').show();
+      $('#evf-form-50 .evf-field-container').hide();
+      $('.modal-body .fr_section5').show();
+      $('.fr-form-step .col-sm-6 h1').addClass('active');
+      $('.fr-form-step .col-sm-6 hr').addClass('active');       
+      $('#fr-proceed').hide();  
+    });
     jQuery(document).scroll(function () {
         let s = $(window).scrollTop();
-        console.log(s);
-        if (s > 100){
+
+        if (s > 90){
             $('#header').css({
                 'background':'#fff'
             });
+            $('#header ul li a').addClass('fr-grey-fg');
+            $('#header').addClass('fr-shadow-1');
             $('.header-logo').css({
                 'width':'50px'
             });
@@ -73,11 +122,14 @@ jQuery(window).load(function(){
             $('#header').css({
                 'background':'transparent'
             });
+            $('#header ul li a').removeClass('fr-grey-fg');
+            $('#header').removeClass('fr-shadow-1');
             $('.header-logo').css({
                 'width':'100px'
             });           
         }
     });
+  });
 })(jQuery);
 (function ($) {
     jQuery(document).ready(function () {
@@ -163,14 +215,11 @@ jQuery(document).ready(function () {
 $(document).ready(function () {
 
   $('#myModal').on('show.bs.modal', function (event) {
-    $('#header').css({
-      'position':'relative'
-    });
+    $('#header').hide();
+
   });
     $('#myModal').on('hide.bs.modal', function (event) {
-      $('#header').css({
-        'position':'fixed'
-      });
+      $('#header').show();
   });
     window.lavaAnimation = (function() {
         "use strict";

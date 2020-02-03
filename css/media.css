@@ -19,15 +19,23 @@
   nav .container .header-logo{
     width: 60px;
   }
+  .section-main .fr_section1 .fr_section1_left {
+    height: 40vh;
+    background: #e17400;
+}
+.section-main .fr_section1 .fr_section1_right{
+    height: 40vh;
+    border-radius: 50px 50px 0px 0px;
+    background: #fff;
+    top: -50px;
+}
+.fr_section1 .fr_section1_wrapper,.fr_section1 .fr_section1_wrapper2 {
+
+  height: 40vh;
+  top:5rem;
+}
   nav .container .header-menu #mainmenu #menu-button{
     color:#dd3f1e;
-  }
-  .section-main .fr_section1 .fr_section1_left{
-    height:60vh;
-  }
-  .section-main .fr_section1 .fr_section1_right{
-    height:40vh;
-    border-radius: 50px 50px 0px 0px;
   }
   .fr_section5 .col-md-6 {
       margin-bottom:50px;

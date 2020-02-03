@@ -4,6 +4,11 @@
  * */
 get_header();
 ?>
+<style>
+	#mainmenu ul li a {
+	color: #9d9d9d !important;
+	}
+</style>
 <section class="section-main">
     <!-- <div class="page-banner col-md-12">
 		<div class="blur-white"></div>
@@ -34,7 +39,7 @@ get_header();
 	</div>
 	<div class="wrapper about-us">
 		<h1 class="row fr-page-title text-center">Our Team</h1>
-		<?php echo do_shortcode( '[tlpteam id="18" title=""]' ) ?>
+		<?php echo do_shortcode( '[tlpteam id="48" title="Our Team"]' ) ?>
 	</div>
 <!-- page content start-->
 

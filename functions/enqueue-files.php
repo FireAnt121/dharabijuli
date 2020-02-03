@@ -15,7 +15,7 @@ function niche_enqueue() {
 
     wp_enqueue_script('bootstrap', get_template_directory_uri() . '/js/bootstrap.js', array('jquery'));
 	    wp_enqueue_script('niche-default', get_template_directory_uri() . '/js/default.js', array('jquery'));
-	    	
+	    wp_enqueue_script('niche-validate','https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js');	
     if (is_singular())
         wp_enqueue_script("comment-reply");
     
