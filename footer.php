@@ -72,29 +72,58 @@ $hide_footer_widget_bar = get_theme_mod('hideFooterWidgetBar',1);
 		</div>
 	</div>
 </footer>
-<button type="button" class="btn btn-primary order" data-toggle="modal" data-target="#myModal">
-    Open modal
-  </button>
+<div class="fr-floating-button order" data-toggle="modal" data-target="#myModal" data-toggle="tooltip" data-placement="top" title="Order Us">
+<i class="fas fa-shopping-basket"></i>
+</div>
 
   <!-- The Modal -->
   <div class="modal" id="myModal">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-dialog modal-dialog-centered modal-md">
       <div class="modal-content">
-      
-        <!-- Modal Header -->
-        <div class="modal-header">
-          <h4 class="modal-title">Modal Heading</h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-        
         <!-- Modal body -->
         <div class="modal-body">
-        <?php do_shortcode('[wpforms id="30"]'); ?>
-        </div>
-        
-        <!-- Modal footer -->
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          <div class="row fr-form-step">
+              <div class="col-sm-6">
+                <h1 class="active">1</h1>
+                <hr class="active">
+              </div>
+              <div class="col-sm-6">
+              <h1>2</h1>
+                <hr>
+              </div>         
+          </div>
+          <div class="fr_section5 row">
+            <h4 class="pack">Our Package Deals</h4>
+              <div class="col-lg-4 wow bounceIn" data-wow-delay="0.25s"">
+              <div class="col-sm-12 f_red f_w">
+                  <h4>Rs 3,000</h4>
+                  <p>Per Month</p>
+                  <h2>Service Upto Rs 2,000</h2>
+                  <h3>1 Routine Checkup</h3>
+                </div>
+              </div>
+
+              <div class="col-lg-4 wow bounceIn" data-wow-delay="0.5s"">
+              <div class="col-sm-12 f_green f_w">
+                  <h4>Rs 5,000</h4>
+                  <p>Per Month</p>
+                  <h2>Service Upto Rs 2,000</h2>
+                  <h3>1 Routine Checkup</h3>
+                </div>
+              </div>
+              <div class="col-lg-4 wow bounceIn" data-wow-delay="0.5s"">
+              <div class="col-sm-12 f_purple f_w">
+                  <h4>Rs 7,000</h4>
+                  <p>Per Month</p>
+                  <h2>Service Upto Rs 2,000</h2>
+                  <h3>1 Routine Checkup</h3>
+                </div>
+              </div>
+          </div>
+          <div class="fr-submit-everest">
+            <button type="submit" id="fr-proceed" class="everest-forms-submit-button button evf-submit">Proceed</button> 
+          </div>
+        <?php echo do_shortcode('[everest_form id="50"]'); ?>
         </div>
         
       </div>

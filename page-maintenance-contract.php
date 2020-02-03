@@ -4,6 +4,11 @@
  * */
 get_header();
 ?>
+<style>
+	#mainmenu ul li a {
+	color: #9d9d9d !important;
+	}
+</style>
 <section class="section-main">
     <!-- <div class="page-banner col-md-12">
 		<div class="blur-white"></div>

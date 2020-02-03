@@ -1142,12 +1142,13 @@ section {
 .fr-footer-img{
     background: url(../images/cir_white.png);
     width: 45vw;
-    height: 45vw;
+    height: 25vw;
     position: absolute;
     background-size: cover;
     background-position: right bottom;
     z-index: 1;
-    margin: -20vw 0px 0px -10vw;
+    margin: 0vw 0px 0px -10vw;
+    overflow: hidden;
 }
 .main-footer img{
     position: relative;

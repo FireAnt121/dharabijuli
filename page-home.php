@@ -95,7 +95,7 @@ get_header();
 
 		<div class="row fr-step">
 			<div class="col-md-2">
-			1
+				<span>1</span>
 			</div>
 			<div class="col-md-8">
 				<div class="fr-work-title">
@@ -109,7 +109,7 @@ get_header();
 			</div>
 		</div>
 		<div class="row fr-step fr-right">
-		<div class="col-md-2">
+		<div class="col-md-1">
 			
 			</div>
 			<div class="col-md-8">
@@ -120,12 +120,12 @@ get_header();
 				Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
 				</div>
 			</div>
-			<div class="col-md-2">
-				2
+			<div class="col-md-3">
+				<span>2</span>
 			</div>
 		</div>
 		<div class="row fr-step fr-left">
-			<div class="col-md-2">
+			<div class="col-md-3">
 				3
 			</div>
 			<div class="col-md-8">
@@ -136,7 +136,7 @@ get_header();
 				Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
 				</div>
 			</div>
-			<div class="col-md-2">
+			<div class="col-md-1">
 			</div>
 		</div>
 	</div>

@@ -4,6 +4,11 @@
  * */
 get_header();
 ?>
+<style>
+	#mainmenu ul li a {
+	color: #9d9d9d !important;
+	}
+</style>
 <section class="section-main">
     <!-- <div class="page-banner col-md-12">
 		<div class="blur-white"></div>
@@ -41,12 +46,12 @@ get_header();
             </div>
     </div>
     <div class="fr_section3 row f-services section-right">
-            <div class="col-md-4 wow bounceInRight" data-wow-delay="0.5s">
+            <div class="col-md-4 wow bounceInLeft" data-wow-delay="0.5s">
                 <div class="fr_cir_wrap fr-tx-l-10 fr-blue-bg" style="background:url(<?php echo get_template_directory_uri(); ?>/images/cir_white.png);   background-position: center; background-size: contain;" >
                     <img src="<?php echo get_template_directory_uri(); ?>/images/pipe1.jpg" alt="pipe" />
                 </div>
             </div>
-            <div class="col-md-8 wow bounceInLeft" data-wow-delay="0.5s">
+            <div class="col-md-8 wow bounceInRight" data-wow-delay="0.5s">
                 <h1 class="fr-black-fg">Electrical Services</h1>
 
                 <p class="fr-grey-fg">Regardless of the size or scope of your plumbing problems,
